@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "io.github.thomas-n-george"
-version = "1.0.0"
+version = "1.0.1"
 
 kotlin {
     jvm()
@@ -40,7 +40,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.kmp-math-lib"
+    namespace = "io.github.kmpmathlib"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -52,7 +52,7 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates(group.toString(), "kmp-math-lib", version.toString())
+    coordinates(group.toString(), "kmpmathlib", version.toString())
 
     pom {
         name = "My math library"
